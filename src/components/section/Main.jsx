@@ -3,6 +3,7 @@ import { Helmet,HelmetProvider } from 'react-helmet-async'
 
 import Header from './Header'
 import Footer from './Footer'
+import Search from './Search'// eslint-disable-line no-unused-vars
 
 const Main = ( props ) => {
     return (
@@ -15,6 +16,7 @@ const Main = ( props ) => {
             </Helmet>
             <Header />
             <main id="main" role="main">
+                <Search/>
                 {props.children}
             </main>
             <Footer />

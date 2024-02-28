@@ -5,7 +5,7 @@ import { CiBullhorn } from "react-icons/ci";
 import { CiCoffeeCup } from "react-icons/ci";
 import { CiDumbbell } from "react-icons/ci";
 import { CiFries } from "react-icons/ci";
-import { CiMoneyBill } from "react-icons/ci";
+import { FaFire } from "react-icons/fa";
 
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineCodepen } from "react-icons/ai";
@@ -14,13 +14,13 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 export const headerMenus = [
     {
-        title: "웹스토리보이",
+        title: "홈",
         icon: <CiBaseball />,
         src: "/"
     },
     {
-        title: "추천 영상",
-        icon: <CiMoneyBill />,
+        title: "인기 급상승",
+        icon: <FaFire />,
         src: "/today"
     },
     {

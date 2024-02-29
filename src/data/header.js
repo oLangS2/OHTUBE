@@ -1,11 +1,11 @@
 import { CiBaseball } from "react-icons/ci";
-import { CiCoins1 } from "react-icons/ci";
-import { CiBoxes } from "react-icons/ci";
-import { CiBullhorn } from "react-icons/ci";
-import { CiCoffeeCup } from "react-icons/ci";
-import { CiDumbbell } from "react-icons/ci";
+import { FiYoutube } from "react-icons/fi";
+import { FaConnectdevelop } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa6";
+import { FaMusic } from "react-icons/fa";
 import { CiFries } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
+import { PiCookingPotBold } from "react-icons/pi";
 
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineCodepen } from "react-icons/ai";
@@ -24,28 +24,28 @@ export const headerMenus = [
         src: "/today"
     },
     {
-        title: "추천 개발자",
-        icon: <CiCoins1 />,
+        title: "구독",
+        icon: <FiYoutube />,
         src: "/developer"
     },
     {
-        title: "웹디자인기능사",
-        icon: <CiBoxes />,
+        title: " Interactive Developer",
+        icon: <FaConnectdevelop />,
         src: "/webd"
     },
     {
-        title: "웹표준 사이트",
-        icon: <CiBullhorn />,
+        title: " yerin Baek",
+        icon: <FaRegHeart />,
         src: "/website"
     },
     {
-        title: "GSAP Parallax",
-        icon: <CiCoffeeCup />,
+        title: " Harry Styles",
+        icon: <FaMusic />,
         src: "/gsap"
     },
     {
-        title: "포트폴리오 사이트",
-        icon: <CiDumbbell />,
+        title: "떡볶퀸",
+        icon: <PiCookingPotBold />,
         src: "/port"
     },
     {

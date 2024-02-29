@@ -2,11 +2,13 @@ import React from 'react'
 import Main from '../components/section/Main'
 import Today from '../components/contents/Today'
 import Developer from '../components/contents/Developer'
-import Webd from '../components/contents/Webd'
-import Website from '../components/contents/Website'
-import Gsap from '../components/contents/Gsap'
-import Portfolio from '../components/contents/Portfolio'
-import Youtube from '../components/contents/Youtube'
+import VideoSlider from '../components/videos/VideoSlider'
+
+import {webdText} from '../data/webd'
+import {websiteText} from '../data/website'
+import {gsapText} from '../data/gsap'
+import {portfolioText} from '../data/portfolio'
+import {youtubeText} from '../data/Youtube'
 
 const Home = () => {
     return(
@@ -15,12 +17,12 @@ const Home = () => {
             description="오현정 포트폴리오 오튜브 사이트에 오신 것을 환영합니다.">
                 
             <Today />
-            <Developer />
-            <Webd />
-            <Website />
-            <Gsap />
-            <Portfolio />
-            <Youtube />
+            <Developer/>
+            <VideoSlider videos={webdText} title="Interactive Developer" id="webd"/>
+            <VideoSlider videos={websiteText} title="yerin Baek" id="website"/>
+            <VideoSlider videos={gsapText} title="Harry Styles" id="gsap"/>
+            <VideoSlider videos={portfolioText} title="떡볶퀸" id="portfolio"/>
+            <VideoSlider videos={youtubeText} title="유튜브 클론 사이트" id="youtube"/>
         </Main>
     )
 }

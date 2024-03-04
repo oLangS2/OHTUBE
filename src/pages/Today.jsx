@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import Main from '../components/section/Main'
 
 import { todayText } from '../data/today'
@@ -6,14 +6,24 @@ import { Link } from 'react-router-dom'
 import { FaFire } from "react-icons/fa";
 
 const Today = () => {
+    const [loading,setLoading] = useState(true);
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            setLoading(false);
+        },300);
+    },[]);
+
+    const todayPageClass = loading ?'isLoading':'isLoaded';
+
     return (
         <Main 
             title = "인기 급상승"
             description="인기 급상승 동영상입니다.">
             
-            <section id='todayPage'>
+            <section id='todayPage' className={todayPageClass}>
                 <h2><FaFire />인기 급상승</h2>
-
+                <h3>최근 인기 동영상입니다.</h3>
                 {todayText.map((today, key) => (
                     <div className='today__inner' key={key}>
                         <div className='today__thumb play__icon'>

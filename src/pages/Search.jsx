@@ -44,7 +44,7 @@ const Search = () => {
             description="유튜브 검색 결과 페이지입니다.">
             
             <section id='searchPage' className={searchPageClass}>
-                <h2><em>{searchId}</em> 검색 결과입니다.</h2>
+                <h2>검색하신 <em>{searchId}</em>의 결과입니다.</h2>
                 <div className="video__inner search">
                     <VideoSearch videos={videos} />
                 </div>
@@ -59,6 +59,3 @@ const Search = () => {
 }
 
 export default Search
-
-
-

@@ -9,8 +9,8 @@ export const youtubeText = [
         title: "01 나만의 유튜브 사이트 만들기",
         img: youtube01,
         author: "webstoryboy",
-        videoId: "OKZXYgAgtyw",
-        date: "2023.09.09",
+        videoId: "Yoqm5ah7qw4&t=2s",
+        date: "2023.10.16",
         channelId: "UCsvQSv7EeCMHyYb9ENKAJZw",
     },{
         title: "02 나만의 유튜브 사이트 만들기",

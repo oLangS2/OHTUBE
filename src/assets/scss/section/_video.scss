@@ -1,7 +1,6 @@
 .video__inner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap:1%;
+    grid-template-columns: repeat(4, 24%);
     justify-content: space-between;
 
     @media (max-width: 1400px){
@@ -18,13 +17,9 @@
 
     .video {
         margin-bottom: 20px;
-        
-        .play__icon a::after{
-            width: 45px!important;
-            height: 45px!important;
-        }
     }
 }
+
 .video__inner.search {
     min-height: 100vh;
     
@@ -82,6 +77,24 @@
     }
 }
 
+.video__more {
+    button {
+        width: 100%;
+        border: 0;
+        padding: 20px;
+        background-color: var(--black100);
+        color: var(--white);
+        transition: all 0.3s;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border-radius: 40px;
+
+        &:hover {
+            background-color: var(--black200);
+        }
+    }
+}
+
 // 비디오 페이지 
 #videoViewPage {
     padding: 0;
@@ -105,7 +118,7 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 40px;
-            background-color: #111;
+            background-color: var(--black100);
             padding: 10px 30px;
             border-radius: 40px;
 
@@ -134,22 +147,7 @@
         }
     } 
 }
-.video__more {
-    button {
-        width: 100%;
-        border: 0;
-        padding: 20px;
-        background-color: var(--black100);
-        color: var(--white);
-        transition: all 0.3s;
-        margin-bottom: 20px;
-        cursor: pointer;
-        border-radius: 40px;
 
-        &:hover {
-            background-color: var(--black200);
-        }
-    }
-}
+
 
 

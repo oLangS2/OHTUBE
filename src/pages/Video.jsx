@@ -45,6 +45,7 @@ const Video = () => {
                             <div className='video__channel'>
                                 <div className='id'>
                                     <Link to={`/channel/${videoDetail.snippet.channelId}`}>{videoDetail.snippet.channelTitle}</Link>
+                                    <span className='date'>{videoDetail.snippet.publishedAt}</span>
                                 </div>
                                 <div className='count'>
                                     <span className='view'><CiRead />{videoDetail.statistics.viewCount}</span>

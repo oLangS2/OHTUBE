@@ -10,6 +10,8 @@ const VideoCard = ({ videos }) => {
                         <Link to={`/video/${video.videoId}`}>
                             <img src={video.img} alt={video.title} />
                         </Link>
+                        <h4>{video.title}</h4>
+                        <h5>{video.date}</h5>
                     </div>
                 </div>
             ))}

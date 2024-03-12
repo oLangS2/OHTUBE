@@ -14,12 +14,22 @@ section {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;
         font-weight: 900;
+        
+        em{
+            background-color: var(--red100);
+            font-size:1.1rem;
+        }
     }
     h3{
         font-size: 1rem;
         padding-bottom: 1.4rem;
         margin-bottom: 1.4rem;
         border-bottom: 1px solid var(--black400);
+    }
+}
+section#searchPage{
+    @media(max-width:800px){
+        margin-top: 80px;
     }
 }
 

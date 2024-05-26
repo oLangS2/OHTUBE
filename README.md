@@ -14,7 +14,7 @@ YOUTUBE Data API를 활용하여 외부 데이터를 가져오는 방법을 익�
 -netlify를 통해 사이트를 배포합니다.
 -firebase를 통해 사이트를 배포합니다.
 -vercel를 통해 사이트를 배포합니다.
--git 을 사용하여 파일을 관립합니다.
+-git 을 사용하여 파일을 관리합니다.
 
 ## 프로젝트 실행
 - react를 설치합니다. `npx create-react-app 타이틀`
